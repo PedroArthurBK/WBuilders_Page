@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation | WBuilders</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <!---->
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+            <!---->
+        <div class="logo_header">
+            <img src="logobackground/Logo/Logo.png" width="100%" class="img_logo_header" alt="WBuilders">
+            <!--Alt é um texto alterativo caso não carregue a imagem-->
+            <!---->
+        </div>
+            <!---->
+            <div class="navegation_header" id="navegation_header">  
+                  <!---->
+                  <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            <!---->
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="donation.html">Donation</a>
+                <a href="aboutus.html">About us</a>
+               
+            </div>
+            <!---->
+
+    </div>
+    <!--Fim do header-->
+    <div tabindex="0" onclick="closeSidebar()" class="content" id="content">
+
+        <div class="card-group">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Vision</h5>
+                <p class="card-text">Our vision is a world where every non-profit organization is empowered to realize its full potential and drive meaningful change with unwavering support from our non-profit startup. We envision a future where barriers to success are dismantled, resources are abundant, and collaboration is the cornerstone of impactful work.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Mission</h5>
+                <p class="card-text">Our mission is to empower and support organizations that are dedicated to creating positive change in our communities and the world. We believe that every non-profit organization, regardless of size or resources, deserves the opportunity to thrive and maximize its impact. Our purpose is to serve as a catalyst for their success by providing tailored resources, strategic guidance, and a collaborative network.</p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Value</h5>
+                <p class="card-text">At WBuilders, our core values guide our mission and shape our commitment to supporting other organizations in their endeavors to make a meaningful impact in the world. </p>
+              </div>
+            </div>
+          </div>
+          <div class="space"></div>
+          <div class="space"></div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Donation</h5>
+              <p class="card-text">Your donation to our company is incredibly important, and it plays a pivotal role in our ability to fulfill our mission and make a positive impact.</p>
+            </div>
+          </div>
+          <!-- Button trigger modal -->
+          <div class="colorBtn">
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Donate
+  </button>
+</div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Donation</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="logobackground/donationcode.png" alt="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+          <div class="space"></div>
+     
+             <!--Inicio do footer-->
+             <footer>
+              <div id="footer_content">
+                  <div id="footer_contacts">
+                      <div id="footer_social_media">
+                          
+                          <a href="https://www.instagram.com" class="footer-link" id="instagram">
+                              <i class="fa-brands fa-instagram"></i>
+                          </a>
+                          <a href="https://www.whatsapp.com/" class="footer-link" id="whatsapp">
+                              <i class="fa-brands fa-whatsapp"></i>
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <ul class="footer-list">
+                      <li>
+                          <h3>Customers</h3>
+                      </li>
+                      <li>
+                          <a href="https://wbuilder.scarlat.dev.br/" class="footer-link">Alegria & Vida</a>
+                      </li>
+                    
+                  </ul>
+      
+                  <ul class="footer-list">
+                      <li>
+                          <h3>Products</h3>
+                      </li>
+                      <li>
+                          <a href="index.html" class="footer-link">Web Site</a>
+                      </li>
+                      <li>
+                          <a href="https://wbuilder.scarlat.dev.br/" class="footer-link">Library Magnement</a>
+                      </li>
+                  </ul>
+                  <!---->
+                    <!---->
+              </div>
+      
+              <div id="footer_copyright">
+                  &#169
+                  2023 all rights reserved WBuilders 
+              </div>
+           </footer> 
+             <!--Fim do footer-->    
+            </div> 
+</body>
+<!--JS sempre depois do body-->
+<script src="JavaScript/style.js"></script>
+</html>

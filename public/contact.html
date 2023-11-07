@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | WBuilders</title>
+    <link rel="icon" href="Logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="header" id="header">
+        <!---->
+        <button onclick="toggleSidebar()" class="btn_icon_header">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+        </button>
+            <!---->
+        <div class="logo_header">
+            <img src="logobackground/Logo/Logo.png" width="100%" class="img_logo_header" alt="WBuilders">
+            <!--Alt é um texto alterativo caso não carregue a imagem-->
+            <!---->
+        </div>
+            <!---->
+            <div class="navegation_header" id="navegation_header">  
+                  <!---->
+                  <button onclick="toggleSidebar()" class="btn_icon_header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                </button>
+            <!---->
+                <a href="index.html">Home</a>
+                <a href="contact.html">Contact</a>
+                <a href="donation.html">Donation</a>
+                <a href="aboutus.html">About us</a>
+               
+            </div>
+            <!---->
+
+    </div>
+            <!---->
+<!--Fim do header-->
+    
+    <div tabindex="0" onclick="closeSidebar()" class="contentForm" id="contentForm">
+        <div class="contactner">
+        <form class="contact-from">
+        <div class="contact-box">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <h2>Contact Us</h2>
+                <input type="text" class="field" id="name" placeholder="Name" required>
+                <input type="email" class="field" id="email" placeholder="E-mail" required>
+                <input type="text" class="field" id="subject" placeholder="Subject" required>
+                <textarea placeholder="Message" id="message" class="field"></textarea>
+                <input type="submit" class="submit" value="Send E-Mail">
+            </div>
+        </div>
+    </form>
+    </div>
+                <!--Inicio do footer-->
+                <footer>
+                    <div id="footer_content">
+                        <div id="footer_contacts">
+                            <div id="footer_social_media">
+                                
+                                <a href="https://www.instagram.com" class="footer-link" id="instagram">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </a>
+                                <a href="https://www.whatsapp.com/" class="footer-link" id="whatsapp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Customers</h3>
+                            </li>
+                            <li>
+                                <a href="https://wbuilder.scarlat.dev.br/" class="footer-link">Alegria & Vida</a>
+                            </li>
+                          
+                        </ul>
+            
+                        <ul class="footer-list">
+                            <li>
+                                <h3>Products</h3>
+                            </li>
+                            <li>
+                                <a href="index.html" class="footer-link">Web Site</a>
+                            </li>
+                            <li>
+                                <a href="https://wbuilder.scarlat.dev.br/" class="footer-link">Library Magnement</a>
+                            </li>
+                        </ul>
+                        <!---->
+                          <!---->
+                    </div>
+            
+                    <div id="footer_copyright">
+                        &#169
+                        2023 all rights reserved WBuilders 
+                    </div>
+                 </footer> 
+             <!--Fim do footer-->  
+             </div> 
+</body>
+<!--JS sempre depois do body-->
+<script src="JavaScript/style.js"></script>
+<script src="JavaScript/app.js"></script>
+</html>
